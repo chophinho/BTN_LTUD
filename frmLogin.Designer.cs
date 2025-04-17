@@ -38,27 +38,32 @@
             // 
             // btnDANGNHAP
             // 
+            this.btnDANGNHAP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDANGNHAP.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnDANGNHAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDANGNHAP.Location = new System.Drawing.Point(175, 284);
+            this.btnDANGNHAP.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDANGNHAP.Location = new System.Drawing.Point(141, 267);
             this.btnDANGNHAP.Name = "btnDANGNHAP";
             this.btnDANGNHAP.Size = new System.Drawing.Size(164, 50);
             this.btnDANGNHAP.TabIndex = 30;
-            this.btnDANGNHAP.Text = "ĐĂNG NHẬP";
-            this.btnDANGNHAP.UseVisualStyleBackColor = true;
+            this.btnDANGNHAP.Text = "Xác nhận";
+            this.btnDANGNHAP.UseVisualStyleBackColor = false;
             this.btnDANGNHAP.Click += new System.EventHandler(this.btnDANGNHAP_Click);
             // 
             // txtMATKHAU
             // 
+            this.txtMATKHAU.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMATKHAU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMATKHAU.Location = new System.Drawing.Point(152, 190);
+            this.txtMATKHAU.Location = new System.Drawing.Point(141, 190);
             this.txtMATKHAU.Name = "txtMATKHAU";
             this.txtMATKHAU.Size = new System.Drawing.Size(233, 30);
             this.txtMATKHAU.TabIndex = 29;
             // 
             // txtTAIKHOAN
             // 
+            this.txtTAIKHOAN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTAIKHOAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTAIKHOAN.Location = new System.Drawing.Point(152, 139);
+            this.txtTAIKHOAN.Location = new System.Drawing.Point(141, 134);
             this.txtTAIKHOAN.Name = "txtTAIKHOAN";
             this.txtTAIKHOAN.Size = new System.Drawing.Size(233, 30);
             this.txtTAIKHOAN.TabIndex = 28;
@@ -67,7 +72,7 @@
             // 
             this.lbMATKHAU.AutoSize = true;
             this.lbMATKHAU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMATKHAU.Location = new System.Drawing.Point(31, 195);
+            this.lbMATKHAU.Location = new System.Drawing.Point(31, 193);
             this.lbMATKHAU.Name = "lbMATKHAU";
             this.lbMATKHAU.Size = new System.Drawing.Size(93, 25);
             this.lbMATKHAU.TabIndex = 27;
@@ -77,7 +82,7 @@
             // 
             this.lbTAIKHOAN.AutoSize = true;
             this.lbTAIKHOAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTAIKHOAN.Location = new System.Drawing.Point(31, 139);
+            this.lbTAIKHOAN.Location = new System.Drawing.Point(31, 137);
             this.lbTAIKHOAN.Name = "lbTAIKHOAN";
             this.lbTAIKHOAN.Size = new System.Drawing.Size(99, 25);
             this.lbTAIKHOAN.TabIndex = 26;
@@ -85,19 +90,20 @@
             // 
             // lbDANGNHAP
             // 
+            this.lbDANGNHAP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDANGNHAP.AutoSize = true;
-            this.lbDANGNHAP.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDANGNHAP.Location = new System.Drawing.Point(156, 44);
+            this.lbDANGNHAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDANGNHAP.Location = new System.Drawing.Point(100, 46);
             this.lbDANGNHAP.Name = "lbDANGNHAP";
-            this.lbDANGNHAP.Size = new System.Drawing.Size(150, 31);
+            this.lbDANGNHAP.Size = new System.Drawing.Size(240, 42);
             this.lbDANGNHAP.TabIndex = 25;
-            this.lbDANGNHAP.Text = "Đăng nhập";
+            this.lbDANGNHAP.Text = "ĐĂNG NHẬP";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 436);
+            this.ClientSize = new System.Drawing.Size(428, 365);
             this.Controls.Add(this.btnDANGNHAP);
             this.Controls.Add(this.txtMATKHAU);
             this.Controls.Add(this.txtTAIKHOAN);

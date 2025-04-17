@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QL_KHACHSAN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -228,9 +229,14 @@ namespace QL_KHACH_SAN
 
         private void thôngTinPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmTraCuuPhong frmTraCuuPhong = new frmTraCuuPhong();   
-            frmTraCuuPhong.Show();
+            frmDatPhong f = new frmDatPhong();
+            f.Show();
 
+        }
+        private void đặtPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDatPhong f = new frmDatPhong();
+            f.Show();
         }
     }
 }
