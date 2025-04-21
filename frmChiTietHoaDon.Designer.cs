@@ -1,39 +1,39 @@
-﻿namespace QL_KHACH_SAN
+﻿using System.Windows.Forms;
+using System;
+
+namespace QL_KHACH_SAN
 {
     partial class frmChiTietHoaDon
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private DataGridView dgvChiTietHoaDon;
+        private Button btnThoat;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        // Code generated for UI
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmChiTietHoaDon";
-        }
+            this.dgvChiTietHoaDon = new DataGridView();
+            this.btnThoat = new Button();
 
-        #endregion
+            // DataGridView
+            this.dgvChiTietHoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChiTietHoaDon.Location = new System.Drawing.Point(20, 20);
+            this.dgvChiTietHoaDon.Name = "dgvChiTietHoaDon";
+            this.dgvChiTietHoaDon.Size = new System.Drawing.Size(600, 200);
+            this.dgvChiTietHoaDon.TabIndex = 0;
+
+            // Button Thoát
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Location = new System.Drawing.Point(650, 20);
+            this.btnThoat.Click += new EventHandler(this.btnThoat_Click);
+
+            // Form Settings
+            this.ClientSize = new System.Drawing.Size(800, 300);
+            this.Controls.Add(this.dgvChiTietHoaDon);
+            this.Controls.Add(this.btnThoat);
+            this.Name = "frmChiTietHoaDon";
+            this.Text = "Chi Tiết Hóa Đơn";
+            this.Load += new EventHandler(this.frmChiTietHoaDon_Load);
+        }
     }
 }

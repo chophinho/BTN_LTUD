@@ -22,8 +22,8 @@ namespace QL_KHACH_SAN
             // Cấu hình ComboBox trạng thái
             cboTrangThai.Items.Clear();
             cboTrangThai.Items.Add("Trống");
-            cboTrangThai.Items.Add("Đang thuê");
-            cboTrangThai.Items.Add("Đã đặt");
+            cboTrangThai.Items.Add("Đang sử dụng");
+            cboTrangThai.Items.Add("Bảo trì");
             cboTrangThai.SelectedIndex = 0;
         }
 

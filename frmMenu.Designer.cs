@@ -47,7 +47,6 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TaiKhoan = new System.Windows.Forms.Label();
-            this.đặtPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -67,8 +66,7 @@
             this.nhânViênToolStripMenuItem,
             this.chứcVụToolStripMenuItem,
             this.tàiKhoảnToolStripMenuItem,
-            this.thôngTinPhòngToolStripMenuItem,
-            this.đặtPhòngToolStripMenuItem});
+            this.thôngTinPhòngToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1350, 28);
@@ -148,8 +146,8 @@
             // thôngTinPhòngToolStripMenuItem
             // 
             this.thôngTinPhòngToolStripMenuItem.Name = "thôngTinPhòngToolStripMenuItem";
-            this.thôngTinPhòngToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.thôngTinPhòngToolStripMenuItem.Text = "Tra cứu phòng";
+            this.thôngTinPhòngToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.thôngTinPhòngToolStripMenuItem.Text = "Đặt phòng";
             this.thôngTinPhòngToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhòngToolStripMenuItem_Click);
             // 
             // toolStrip
@@ -194,12 +192,6 @@
             this.TaiKhoan.Size = new System.Drawing.Size(44, 16);
             this.TaiKhoan.TabIndex = 4;
             this.TaiKhoan.Text = "label1";
-            // 
-            // đặtPhòngToolStripMenuItem
-            // 
-            this.đặtPhòngToolStripMenuItem.Name = "đặtPhòngToolStripMenuItem";
-            this.đặtPhòngToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
-            this.đặtPhòngToolStripMenuItem.Text = "Đặt phòng";
             // 
             // frmMenu
             // 
@@ -247,7 +239,6 @@
         private System.Windows.Forms.ToolStripMenuItem chứcVụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinPhòngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đặtPhòngToolStripMenuItem;
     }
 }
 

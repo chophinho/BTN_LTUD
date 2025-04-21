@@ -1,4 +1,4 @@
-﻿using QL_KHACHSAN;
+﻿using QL_KHACH_SAN;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +17,8 @@ namespace QL_KHACH_SAN
         public string TenDangNhap;
         public string Quyen;
         private int childFormNumber = 0;
+        private System.Windows.Forms.ComboBox cboMaPhong;
+        private System.Windows.Forms.Label lblMaPhong;
 
         public frmMenu()
         {
@@ -70,9 +72,9 @@ namespace QL_KHACH_SAN
         {
         }
 
-     
 
-       
+
+
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -107,12 +109,12 @@ namespace QL_KHACH_SAN
             TaiKhoan.Text = TenDangNhap;
         }
 
-        
+
 
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           frmHoaDon frmHoaDon = new frmHoaDon();
-           frmHoaDon.Show();
+            frmHoaDon frmHoaDon = new frmHoaDon();
+            frmHoaDon.Show();
 
         }
 
@@ -125,7 +127,7 @@ namespace QL_KHACH_SAN
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           frmKhachHang frmKhachHang = new frmKhachHang();
+            frmKhachHang frmKhachHang = new frmKhachHang();
             frmKhachHang.Show();
 
         }
@@ -149,9 +151,9 @@ namespace QL_KHACH_SAN
         {
             if (Quyen == "admin")
             {
-                frmLoaiPhong frmLoai = new frmLoaiPhong(); 
+                frmLoaiPhong frmLoai = new frmLoaiPhong();
                 frmLoai.Show();
-                
+
             }
             else
             {
@@ -216,7 +218,7 @@ namespace QL_KHACH_SAN
         {
             if (Quyen == "admin")
             {
-                frmTaiiKhoan frmTaiiKhoan = new frmTaiiKhoan();
+                frmTaiKhoan frmTaiiKhoan = new frmTaiKhoan();
                 frmTaiiKhoan.Show();
             }
             else
@@ -232,11 +234,6 @@ namespace QL_KHACH_SAN
             frmDatPhong f = new frmDatPhong();
             f.Show();
 
-        }
-        private void đặtPhòngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDatPhong f = new frmDatPhong();
-            f.Show();
         }
     }
 }

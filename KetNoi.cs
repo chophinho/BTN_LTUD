@@ -44,13 +44,13 @@ namespace QL_KHACH_SAN
             return dta;
         }
 
-        // Phương thức thực thi câu lệnh SQL mà không trả về dữ liệu
-        public void ThucThi(string sql, SqlParameter[] parameters)
+        // Phương thức thực thi thủ tục có tham số
+        public void ThucThi(string query, SqlParameter[] parameters)
         {
             KetNoiDatabase();
-            cmd = new SqlCommand(sql, cnn);
+            cmd = new SqlCommand(query, cnn);
+            cmd.CommandType = CommandType.Text; // Quan trọng
 
-            // Thêm các tham số vào lệnh SQL
             if (parameters != null)
             {
                 cmd.Parameters.AddRange(parameters);
