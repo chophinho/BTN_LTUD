@@ -174,5 +174,10 @@ namespace QL_KHACH_SAN
         {
             this.Close();
         }
+
+        private void frmDichVu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace QL_KHACH_SAN
         // Kết nối vào cơ sở dữ liệu
         public void KetNoiDatabase()
         {
-            string strKetNoi = @"Data Source=DESKTOP-BVO9EPH\SQLEXPRESS;Initial Catalog=QLKhachSan;Integrated Security=True";
+            string strKetNoi = @"Data Source=DESKTOP-VU594HI\PHUONG;Initial Catalog=QLKhachSan;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
@@ -56,6 +56,13 @@ namespace QL_KHACH_SAN
                 cmd.Parameters.AddRange(parameters);
             }
 
+            cmd.ExecuteNonQuery();
+            HuyKetNoi();
+        }
+        public void ThucThi2(string sql)
+        {
+            KetNoiDatabase();
+            cmd = new SqlCommand(sql, cnn);
             cmd.ExecuteNonQuery();
             HuyKetNoi();
         }

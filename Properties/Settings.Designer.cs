@@ -33,5 +33,16 @@ namespace QL_KHACH_SAN.Properties {
                 return ((string)(this["QL_KhachSanConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VU594HI\\PHUONG;Initial Catalog=QLKhachSan;Integrated Security" +
+            "=True;TrustServerCertificate=True")]
+        public string QLKhachSanConnectionString {
+            get {
+                return ((string)(this["QLKhachSanConnectionString"]));
+            }
+        }
     }
 }

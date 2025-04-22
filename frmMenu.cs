@@ -107,6 +107,9 @@ namespace QL_KHACH_SAN
         private void frmMenu_Load(object sender, EventArgs e)
         {
             TaiKhoan.Text = TenDangNhap;
+            frmHoaDon frmHoaDon = new frmHoaDon();
+            frmHoaDon.MdiParent = this;
+            frmHoaDon.Show();
         }
 
 
@@ -114,6 +117,7 @@ namespace QL_KHACH_SAN
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmHoaDon frmHoaDon = new frmHoaDon();
+            frmHoaDon.MdiParent = this;
             frmHoaDon.Show();
 
         }
@@ -180,8 +184,8 @@ namespace QL_KHACH_SAN
 
         private void chiTiếtDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDichVu frmChiTiet = new frmDichVu();
-            frmChiTiet.Show();
+            frmChiTietDichVu frmChiTietDichVu = new frmChiTietDichVu();
+            frmChiTietDichVu.Show();
 
         }
 
