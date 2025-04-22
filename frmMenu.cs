@@ -1,5 +1,4 @@
 ﻿using QL_KHACH_SAN;
-using QL_KHACHSAN;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -192,8 +191,8 @@ namespace QL_KHACH_SAN
         }
         private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmThongKeDoanhThu frm = new frmThongKeDoanhThu();
-            frm.Show();
+            //frmThongKeDoanhThu frm = new frmThongKeDoanhThu();
+            //frm.Show();
         }
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -246,5 +245,28 @@ namespace QL_KHACH_SAN
 
         }
 
+        private void báoCáoChứcVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChucVuReport f = new frmChucVuReport();
+            f.Show();
+        }
+
+        private void báoCáoNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVienReport f = new frmNhanVienReport();
+            f.Show();
+        }
+
+        private void báoCáoChiTiếtHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmChiTietHoaDonReport f= new FrmChiTietHoaDonReport();
+            f.Show();
+        }
+
+        private void báoCáoHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHoaDonReport h = new frmHoaDonReport(); 
+            h.Show();
+        }
     }
 }

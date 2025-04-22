@@ -36,8 +36,11 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDonReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiTietHoaDonReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChucVuReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChucVuReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="crChiTietHoaDon.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,11 +88,23 @@
     <Compile Include="frmChiTietHoaDon.Designer.cs">
       <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmChiTietHoaDonReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChiTietHoaDonReport.Designer.cs">
+      <DependentUpon>FrmChiTietHoaDonReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmChucVu.Designer.cs">
       <DependentUpon>frmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChucVuReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucVuReport.Designer.cs">
+      <DependentUpon>frmChucVuReport.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatPhong.cs">
       <SubType>Form</SubType>
@@ -96,6 +123,12 @@
     </Compile>
     <Compile Include="frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDonReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDonReport.Designer.cs">
+      <DependentUpon>frmHoaDonReport.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -127,6 +160,12 @@
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNhanVienReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVienReport.Designer.cs">
+      <DependentUpon>FrmNhanVienReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,8 +184,20 @@
     <Compile Include="frmTraCuuPhong.Designer.cs">
       <DependentUpon>frmTraCuuPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDonReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDonReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="KetNoi.cs" />
     <Compile Include="KetNoi2.cs" />
+    <Compile Include="NhanVienReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhanVienReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLKhachSanDataSet.Designer.cs">
@@ -159,6 +210,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_KhachSanDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietHoaDonReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChiTietHoaDonReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucVuReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChucVuReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="crChiTietHoaDon.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crChiTietHoaDon.cs</LastGenOutput>
@@ -172,8 +231,17 @@
     <EmbeddedResource Include="frmChiTietHoaDon.resx">
       <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmChiTietHoaDonReport.resx">
+      <DependentUpon>FrmChiTietHoaDonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChucVuReport.resx">
+      <DependentUpon>frmChucVuReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDichVu.resx">
       <DependentUpon>frmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDonReport.resx">
+      <DependentUpon>frmHoaDonReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -184,11 +252,22 @@
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVienReport.resx">
+      <DependentUpon>FrmNhanVienReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaiiKhoan.resx">
       <DependentUpon>frmTaiiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDonReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NhanVienReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

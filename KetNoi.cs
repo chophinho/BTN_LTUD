@@ -10,7 +10,6 @@ namespace QL_KHACH_SAN
         public SqlCommand cmd;
         public DataTable dta;
         public SqlDataAdapter ada;
-
         // Kết nối vào cơ sở dữ liệu
         public void KetNoiDatabase()
         {
