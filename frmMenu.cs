@@ -1,4 +1,5 @@
 ﻿using QL_KHACH_SAN;
+using QL_KHACHSAN;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -178,13 +179,18 @@ namespace QL_KHACH_SAN
 
         }
 
+
         private void chiTiếtDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDichVu frmChiTiet = new frmDichVu();
             frmChiTiet.Show();
 
         }
-
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongKeDoanhThu frm = new frmThongKeDoanhThu();
+            frm.Show();
+        }
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Quyen == "admin")
@@ -235,5 +241,6 @@ namespace QL_KHACH_SAN
             f.Show();
 
         }
+
     }
 }
